@@ -76,7 +76,7 @@ if __name__ == '__main__':
     missing_df["price_missing"] = missing_df["price"].isna()    # This creates a separate column
     missing_df["currency"] = missing_df["currency"].isna()  # This replaces the column
     print(missing_df)
- 
+
     # DRY version, does the same as before, this method might have worse performance
     mdf_values = ["id", "name", "price", "currency"]
     for mdf in mdf_values:
